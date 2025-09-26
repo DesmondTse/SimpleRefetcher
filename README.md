@@ -1,5 +1,5 @@
-//Example:
-
+Example:
+```
 const reFetcher = createReFetcher({
     fetchActionFn: async (signal) => {
         const res = await fetch('/api/data', { signal })
@@ -17,3 +17,4 @@ reFetcher.startAutofetch()
 
 // stop refetching
 // reFetcher.stopAutofetch()
+```

@@ -6,7 +6,9 @@ const reFetcher = createReFetcher({
         const data = await res.json()
         console.log('Fetched:', data)
     },
-    exceptionHandle: (err) => console.warn('Fetch error:', err)
+    blockFn: null,    
+    exceptionHandle: (err) => console.warn('Fetch error:', err),
+    refreshInterval: 5000
 })
 
 reFetcher.subscribe(() => {

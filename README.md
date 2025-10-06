@@ -1,5 +1,5 @@
 Example:
-```
+``` JS
 const reFetcher = createReFetcher({
     fetchActionFn: async (signal) => {
         const res = await fetch('/api/data', { signal })
